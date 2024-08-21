@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <p class="logo">
+                        Logo
+                    </p>
+                    <h1 class="nav-header">SHOP</h1>
+                    <div class="cart-icon-wrapper">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>0</span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        
+            <div class="container">
+                <section class="shop">
+                <div class="item">
+                    <img src="images/t-shirt.jpg" alt="image">
+                    <div class="item-details">
+                        <h5 class="name">
+                            T-Shirt
+                        </h5>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, voluptatum.
+                        </p>
+                        <!-- item buttons -->
+                        <div class="item-btns">
+                            <span class="price">R250</span>
+                            <i class="fas fa-minus" id="decrement-btn" onclick="decrement()"></i>
+                            <span class="quantity">0</span>
+                            <i class="fas fa-plus" id="increment-btn" onclick="increment()"></i>
+                        </div>
+                    </div>  
+                </div>
+            </section>
+            </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
